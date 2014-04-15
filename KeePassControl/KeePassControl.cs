@@ -236,7 +236,11 @@ namespace KeePassPluginDevTools.Control
       /* start KeePass with test1.kdbx db */
       try
       {
-        args = new string[] {                     testDbFiles[0],                    "-pw:" + password,                    "--debug"                };
+        args = new string[] { 
+                    testDbFiles[0],
+                    "-pw:" + password,
+                    "--debug"
+                };
 
         StartKeePassProc(args);
 
